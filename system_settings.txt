@@ -1,0 +1,15 @@
+[system]
+project_dir = projects
+data_dir = data
+database = ies.sqlite
+#debug = True
+debug = False
+
+[data_hashes]
+eff_base_refl.csv = fd58ccc4bd8af6662456f4d14d6158af1e7b82de97fa22856c80e36ae4e47c9b
+coef_util.csv = 63f0155a2f14efb70df75c41d75b7d38b5c236b646e299d79a606a162ef7e1b3
+luminaire_info.csv = 5a4ba871946c1c4e12b397f5eefe08c6154b4350f639691d5cfaf99cd9f24fb9
+rsdd.csv = 6e271a805bbfb160df8b231b1744bee18a83f1683b9218d99507bb7529e002cc
+ldd.csv = c2ceb95f2758c7b1d87f48c712c2cf5a07e38c98c465475ee9b4f9cee014f979
+floor_mf.csv = cd4ebefb8d8bc8a0131b1aa4e4fd987a67975fae8109f010af3c27a09e2abe00
+
