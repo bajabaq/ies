@@ -1,0 +1,2 @@
+to run tests in this folder, just type 'pytest'
+which will automatically find and run tests

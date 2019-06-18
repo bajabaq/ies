@@ -1,0 +1,50 @@
+#use configparser to read this file
+#may have to edit to get to work
+#see:  https://docs.python.org/2/library/configparser.html
+
+#avg_illum_fc is recommended ft candles for this room type (see rooms type below for values)
+
+[Location]
+room_name   : dining room
+avg_illum_fc: 15
+dirtiness   : clean
+years_before_clean: 0.5
+
+
+#dimesions in ft
+[Dimensions]
+length : 12
+width  : 12
+height : 8
+shape  : rect
+
+[Cavities]
+h_ceil_cav : 2.5
+h_floor_cav: 2.5
+#h_room_cav is computed (height - h_ceil_cav - h_floor_cav)
+
+#relectances in % - this value should come from paint
+#defaults are:
+#ceiling 80
+#wall    40
+#floor   20
+#wall is Glidden pebble grey 00NN 53/000
+[Reflectance]
+r_ceiling: 83
+r_wall   : 53
+r_floor  : 20
+
+[Luminaire]
+mfg      : ACME
+cat_num  : 123456
+luminaire_id : 1
+num_lamps: 12
+
+[Lamp]
+ltype : LED
+color : 4000
+lumens_per_lamp: 155
+lamp_lumens_deprecation: 0.975
+
+#total_lumens_per_lamp = num lamps per luminaire * lumens per lamp
+

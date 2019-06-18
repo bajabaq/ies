@@ -1,0 +1,44 @@
+#use configparser to read this file
+#may have to edit to get to work
+#see:  https://docs.python.org/2/library/configparser.html
+
+#avg_illum_fc is recommended ft candles for this room type (see rooms type below for values)
+
+[Location]
+room_name   : laundry
+avg_illum_fc: 30
+dirtiness   : very_clean
+years_before_clean: 0.5
+
+#dimesions in ft
+[Dimensions]
+length : 5.5
+width  : 7
+height : 8
+shape  : rect
+
+[Cavities]
+h_ceil_cav : 0.0
+h_floor_cav: 0.0
+#h_room_cav is computed (height - h_ceil_cav - h_floor_cav)
+
+#relectances in %
+[Reflectance]
+r_ceiling: 70
+r_wall   : 53
+r_floor  : 20 
+
+[Luminaire]
+mfg      : ACME
+cat_num  : 123456
+luminaire_id : 1
+num_lamps: 2
+
+[Lamp]
+ltype : LED
+color : 2700
+lumens_per_lamp: 1600
+lamp_lumens_deprecation: 0.975
+
+#total_lumens_per_lamp = num lamps per luminaire * lumens per lamp
+
